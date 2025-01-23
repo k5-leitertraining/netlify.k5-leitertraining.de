@@ -1,3 +1,3 @@
 [build]
 publish = "dist/"
-command = "echo 'shamefully-hoist=true' >> .npmrc && pnpm build"
+command = "pnpm build"
