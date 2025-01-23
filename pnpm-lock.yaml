@@ -11,6 +11,9 @@ dependencies:
   cheerio:
     specifier: ^1.0.0
     version: 1.0.0
+  entities:
+    specifier: 4.5.0
+    version: 4.5.0
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
