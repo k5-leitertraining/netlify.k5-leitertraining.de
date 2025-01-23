@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p dist && cp -r public/* dist",
+    "dev": "netlify functions:serve"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +17,9 @@
     "cheerio": "^1.0.0",
     "lodash": "^4.17.21",
     "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^3.0.0",
+    "netlify-cli": "^18.0.2"
   }
 }
