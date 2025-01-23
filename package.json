@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@netlify/functions": "^3.0.0",
+    "follow-redirects": "^1.15.9",
     "netlify-cli": "^18.0.2"
   }
 }
