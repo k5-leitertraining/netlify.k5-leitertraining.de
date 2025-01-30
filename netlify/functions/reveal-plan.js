@@ -23,7 +23,7 @@ const handler = async function (event, context) {
     return {
       statusCode: 302,
       headers: {
-        Location: '/error-outdated-link',
+        Location: 'https://k5-leitertraining.de/error',
       },
     }
   }
