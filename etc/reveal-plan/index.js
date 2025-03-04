@@ -205,6 +205,91 @@ const availableTargets = {
       },
     ],
   },
+  'leiter-dna-kurs': {
+    urlToRedirect:
+      'https://onecommunity.mn.co/users/onboarding/choose_plan?plan_id=1768733&bundle_token=71c86ae33abcd7ee81f2bcf579eb5669&prefer_signup=true&utm_source=manual',
+    urlToError: '/error-outdated-link',
+    checks: [
+      // He should have the course in "Aktuelle Kurse"
+      {
+        customFieldId: 'xVrX4NxePp7cxtaZ5xki',
+        requirement: '==Leiter-DNA-Kurs: Einflussnehmer',
+      },
+      // ZahlungsplanID shouldn't be the one he is trying to join
+      {
+        customFieldId: '0Y7672Zfx9tdNf7rO4ur',
+        requirement: '!=1768733',
+      },
+    ],
+  },
+  leiterkurs01: {
+    urlToRedirect:
+      'https://onecommunity.mn.co/users/onboarding/choose_plan?plan_id=1772277&bundle_token=47e70773c2c3b2d2d47e4c391b966440&prefer_signup=true&utm_source=manual',
+    urlToError: '/error-outdated-link',
+    checks: [
+      // He should have the course in "Aktuelle Kurse"
+      {
+        customFieldId: 'xVrX4NxePp7cxtaZ5xki',
+        requirement: '==Leiterkurs 01: Leiter Werden',
+      },
+      // ZahlungsplanID shouldn't be the one he is trying to join
+      {
+        customFieldId: '0Y7672Zfx9tdNf7rO4ur',
+        requirement: '!=1772277',
+      },
+    ],
+  },
+  leiterkurs02: {
+    urlToRedirect:
+      'https://onecommunity.mn.co/users/onboarding/choose_plan?plan_id=1772279&bundle_token=f7ec79ac2fc5f8f2d6428b6b8282afcd&prefer_signup=true&utm_source=manual',
+    urlToError: '/error-outdated-link',
+    checks: [
+      // He should have the course in "Aktuelle Kurse"
+      {
+        customFieldId: 'xVrX4NxePp7cxtaZ5xki',
+        requirement: '==Leiterkurs 02: Gruppenleiter',
+      },
+      // ZahlungsplanID shouldn't be the one he is trying to join
+      {
+        customFieldId: '0Y7672Zfx9tdNf7rO4ur',
+        requirement: '!=1772279',
+      },
+    ],
+  },
+  leiterkurs03: {
+    urlToRedirect:
+      'https://onecommunity.mn.co/users/onboarding/choose_plan?plan_id=1772284&bundle_token=10a7dc6860c1b61261fb34dc66923131&prefer_signup=true&utm_source=manual',
+    urlToError: '/error-outdated-link',
+    checks: [
+      // He should have the course in "Aktuelle Kurse"
+      {
+        customFieldId: 'xVrX4NxePp7cxtaZ5xki',
+        requirement: '==Leiterkurs 03: Bereichsleiter',
+      },
+      // ZahlungsplanID shouldn't be the one he is trying to join
+      {
+        customFieldId: '0Y7672Zfx9tdNf7rO4ur',
+        requirement: '!=1772284',
+      },
+    ],
+  },
+  leiterkurs04: {
+    urlToRedirect:
+      'https://onecommunity.mn.co/users/onboarding/choose_plan?plan_id=1772285&bundle_token=41a5bc9a5cc1701a19fb152792f8a2e2&prefer_signup=true&utm_source=manual',
+    urlToError: '/error-outdated-link',
+    checks: [
+      // He should have the course in "Aktuelle Kurse"
+      {
+        customFieldId: 'xVrX4NxePp7cxtaZ5xki',
+        requirement: '==Leiterkurs 04: Gesamtleiter',
+      },
+      // ZahlungsplanID shouldn't be the one he is trying to join
+      {
+        customFieldId: '0Y7672Zfx9tdNf7rO4ur',
+        requirement: '!=1772285',
+      },
+    ],
+  },
 }
 
 const isValidRequest = async ({ contactEmail, target }) => {
