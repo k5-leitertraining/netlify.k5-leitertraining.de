@@ -254,6 +254,33 @@ const availableTargets = {
         customFieldId: '0Y7672Zfx9tdNf7rO4ur',
         requirement: '!=1772279',
       },
+      // ZahlungsplanID shouldn't be the parallel course
+      {
+        customFieldId: '0Y7672Zfx9tdNf7rO4ur',
+        requirement: '!=1793023',
+      },
+    ],
+  },
+  leiterkurs02b: {
+    urlToRedirect:
+      'https://onecommunity.mn.co/users/onboarding/choose_plan?plan_id=1793023&bundle_token=052962ca8bf9463332f66ef835716d81&prefer_signup=true&utm_source=manual',
+    urlToError: 'https://k5-leitertraining.de/error',
+    checks: [
+      // He should have the course in "Aktuelle Kurse"
+      {
+        customFieldId: 'xVrX4NxePp7cxtaZ5xki',
+        requirement: '==Leiterkurs 02: Gruppenleiter',
+      },
+      // ZahlungsplanID shouldn't be the one he is trying to join
+      {
+        customFieldId: '0Y7672Zfx9tdNf7rO4ur',
+        requirement: '!=1793023',
+      },
+      // ZahlungsplanID shouldn't be the parallel course
+      {
+        customFieldId: '0Y7672Zfx9tdNf7rO4ur',
+        requirement: '!=1772279',
+      },
     ],
   },
   leiterkurs03: {
