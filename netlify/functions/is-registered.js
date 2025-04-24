@@ -6,6 +6,7 @@ const corsHeaders = {
 }
 
 const handler = async function (event) {
+  console.log(`${event.httpMethod} ${event.rawUrl}`)
   const { email, course } = event?.queryStringParameters || {}
   if (!email || !course) {
     return {

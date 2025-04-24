@@ -23,6 +23,7 @@ const StatisticEntrySchema = z.object({
  * @param {import('@netlify/functions').HandlerEvent} event - The event object containing the request details.
  */
 const handler = async function (event) {
+  console.log(`${event.httpMethod} ${event.rawUrl}`)
   if (event.httpMethod === 'OPTIONS') {
     return {
       statusCode: 200,

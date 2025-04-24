@@ -1,6 +1,7 @@
 const { getRedirectUrl } = require('../../etc/reveal-plan/index.js')
 
 const handler = async function (event, context) {
+  console.log(`${event.httpMethod} ${event.rawUrl}`)
   const { email, target } = event?.queryStringParameters || {}
   if (!email || !target) {
     return {
