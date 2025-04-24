@@ -1,4 +1,5 @@
 const { getRedirectUrl } = require('../../etc/get-redirect-url/index.js')
+const { withLogging } = require('../../utils/withLogging.js')
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -6,7 +7,6 @@ const corsHeaders = {
 }
 
 const handler = async function (event) {
-  console.log(`${event.httpMethod} ${event.rawUrl}`)
   const { email } = event?.queryStringParameters || {}
   if (!email) {
     return {
@@ -38,4 +38,4 @@ const handler = async function (event) {
   }
 }
 
-module.exports.handler = handler
+module.exports.handler = withLogging(handler)

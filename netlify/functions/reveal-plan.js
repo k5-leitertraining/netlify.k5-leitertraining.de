@@ -1,7 +1,7 @@
 const { getRedirectUrl } = require('../../etc/reveal-plan/index.js')
+const { withLogging } = require('../../utils/withLogging.js')
 
 const handler = async function (event, context) {
-  console.log(`${event.httpMethod} ${event.rawUrl}`)
   const { email, target } = event?.queryStringParameters || {}
   if (!email || !target) {
     return {
@@ -30,4 +30,4 @@ const handler = async function (event, context) {
   }
 }
 
-module.exports.handler = handler
+module.exports.handler = withLogging(handler)

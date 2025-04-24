@@ -1,5 +1,6 @@
 const { z } = require('zod')
 const axios = require('axios')
+const { withLogging } = require('../../utils/withLogging')
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -15,7 +16,6 @@ const QueryParamSchema = z.object({
  * @param {import('@netlify/functions').HandlerEvent} event - The event object containing the request details.
  */
 const handler = async function (event) {
-  console.log(`${event.httpMethod} ${event.rawUrl}`)
   if (event.httpMethod === 'OPTIONS') {
     return {
       statusCode: 200,
@@ -69,4 +69,4 @@ const handler = async function (event) {
   }
 }
 
-module.exports.handler = handler
+module.exports.handler = withLogging(handler)
