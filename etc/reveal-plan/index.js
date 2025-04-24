@@ -201,7 +201,7 @@ const availableTargets = {
       // ZahlungsplanID shouldn't be the one he is trying to join
       {
         customFieldId: '0Y7672Zfx9tdNf7rO4ur',
-        requirement: '!=610754',
+        requirement: '!=394815',
       },
     ],
   },
