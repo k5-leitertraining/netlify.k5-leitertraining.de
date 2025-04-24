@@ -218,7 +218,7 @@ const availableTargets = {
       // ZahlungsplanID shouldn't be the one he is trying to join
       {
         customFieldId: '0Y7672Zfx9tdNf7rO4ur',
-        requirement: '!=1768733',
+        requirement: '!=1507743',
       },
     ],
   },
@@ -235,7 +235,7 @@ const availableTargets = {
       // ZahlungsplanID shouldn't be the one he is trying to join
       {
         customFieldId: '0Y7672Zfx9tdNf7rO4ur',
-        requirement: '!=1772277',
+        requirement: '!=1510226',
       },
     ],
   },
@@ -252,12 +252,12 @@ const availableTargets = {
       // ZahlungsplanID shouldn't be the one he is trying to join
       {
         customFieldId: '0Y7672Zfx9tdNf7rO4ur',
-        requirement: '!=1772279',
+        requirement: '!=1510228',
       },
       // ZahlungsplanID shouldn't be the parallel course
       {
         customFieldId: '0Y7672Zfx9tdNf7rO4ur',
-        requirement: '!=1793023',
+        requirement: '!=1525510',
       },
     ],
   },
@@ -274,12 +274,12 @@ const availableTargets = {
       // ZahlungsplanID shouldn't be the one he is trying to join
       {
         customFieldId: '0Y7672Zfx9tdNf7rO4ur',
-        requirement: '!=1793023',
+        requirement: '!=1525510',
       },
       // ZahlungsplanID shouldn't be the parallel course
       {
         customFieldId: '0Y7672Zfx9tdNf7rO4ur',
-        requirement: '!=1772279',
+        requirement: '!=1510228',
       },
     ],
   },
@@ -296,7 +296,7 @@ const availableTargets = {
       // ZahlungsplanID shouldn't be the one he is trying to join
       {
         customFieldId: '0Y7672Zfx9tdNf7rO4ur',
-        requirement: '!=1772284',
+        requirement: '!=1510233',
       },
     ],
   },
@@ -313,7 +313,7 @@ const availableTargets = {
       // ZahlungsplanID shouldn't be the one he is trying to join
       {
         customFieldId: '0Y7672Zfx9tdNf7rO4ur',
-        requirement: '!=1772285',
+        requirement: '!=1510234',
       },
     ],
   },
