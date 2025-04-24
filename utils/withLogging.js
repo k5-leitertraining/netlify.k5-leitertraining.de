@@ -1,4 +1,4 @@
-export const withLogging =
+const withLogging =
   (handler) =>
   async (...args) => {
     const [event] = args
@@ -7,3 +7,5 @@ export const withLogging =
     console.log(`Result of ${event.httpMethod} ${event.rawUrl}:`, result)
     return result
   }
+
+module.exports = { withLogging }
