@@ -1,1 +1,3 @@
-export const currentCoursesId = 'xVrX4NxePp7cxtaZ5xki'
+const currentCoursesId = 'xVrX4NxePp7cxtaZ5xki'
+
+module.exports = { currentCoursesId }
