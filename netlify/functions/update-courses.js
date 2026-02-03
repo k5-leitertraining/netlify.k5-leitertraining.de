@@ -8,7 +8,7 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'Content-Type',
 }
 
-const QueryParamSchema = z.object({
+const PutBodySchema = z.object({
   contactEmail: z.string(),
   courseToAdd: z.string(),
 })
@@ -33,7 +33,7 @@ const handler = async function (event) {
     }
   }
 
-  const parseResult = QueryParamSchema.safeParse(event.queryStringParameters)
+  const parseResult = PutBodySchema.safeParse(JSON.parse(event.body))
   if (!parseResult.success) {
     return {
       statusCode: 400,
